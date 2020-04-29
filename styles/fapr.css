@@ -27,7 +27,7 @@ img {
 .pacman {
     margin: 50px;
     position: relative;
-    animation: walk 5s linear 2s infinite alternate;
+    animation: walk 10s linear infinite alternate;
 }
 
 .half_head_top {
@@ -49,6 +49,7 @@ img {
 /*Animacion   transform: scale(-1, 1);*/
 
 @keyframes walk {
+
     0% {
         left: 0px;
         top: 0px;
@@ -60,12 +61,22 @@ img {
 
     }
 
-
     100% {
 
         left: 0px;
         top: 0px;
+
     }
+
+    /* from {
+        left: 0px;
+    }
+
+    to {
+        left: 1000px;
+
+
+    }*/
 }
 
 @keyframes openwaka {
@@ -87,4 +98,14 @@ img {
     50% {
         transform: rotate(35deg);
     }
+}
+
+/*-----*/
+
+.namefooter {
+    margin-top: 3em;
+    font-family: 'Press Start 2P',
+        cursive;
+    color: rgb(253, 212, 253);
+    text-align: center;
 }
