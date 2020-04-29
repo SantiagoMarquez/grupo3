@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.letter {
+    font-family: 'Baloo Bhaina 2',
+        cursive;
+}
+
+#title {
+    font-family: 'Press Start 2P',
+        cursive;
+    color: white;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.pacman {
+    margin: 50px;
+    position: relative;
+    animation: walk 10s linear infinite alternate;
+}
+
+.half_head_top {
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px 100px 0 0;
+    animation: openwaka 0.5s infinite linear;
+}
+
+.half_head_bottom {
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    border-radius: 0 0 100px 100px;
+    animation: openfeed 0.5s infinite linear;
+}
+
+/*Animacion   transform: scale(-1, 1);*/
+
+@keyframes walk {
+
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        left: 1000px;
+        top: 0px;
+
+    }
+
+    100% {
+
+        left: 0px;
+        top: 0px;
+
+    }
+
+    /* from {
+        left: 0px;
+    }
+
+    to {
+        left: 1000px;
+
+
+    }*/
+}
+
+@keyframes openwaka {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-35deg);
+    }
+
+}
+
+@keyframes openfeed {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+/*-----*/
+
+.namefooter {
+    margin-top: 3em;
+    font-family: 'Press Start 2P',
+        cursive;
+    color: rgb(253, 212, 253);
+    text-align: center;
+}
