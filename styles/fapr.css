@@ -46,7 +46,7 @@ img {
     animation: openfeed 0.5s infinite linear;
 }
 
-/*Animacion*/
+/*Animacion   transform: scale(-1, 1);*/
 
 @keyframes walk {
     0% {
@@ -57,7 +57,9 @@ img {
     50% {
         left: 1000px;
         top: 0px;
+
     }
+
 
     100% {
 
