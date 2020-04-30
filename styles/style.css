@@ -48,3 +48,11 @@ body {
     background-color: #39dc4f;
     color: white;
 }
+
+.grid-main {
+    grid-area: main;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    max-width: 100%;
+}
